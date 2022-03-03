@@ -1,0 +1,141 @@
+/* to prevent from violating box model behaviour */
+*{
+    box-sizing: border-box;
+}
+
+#topbox{
+    display: flex;
+    background-color: rgb(233, 226, 218);
+    position:fixed;
+    opacity: 0.8;
+}
+/* for giving size to image */
+@media  screen and (max-width:800px) {
+    #topbox img{
+        width:10%;
+    }
+    
+}
+@media  screen and (min-width:800px) {
+    #topbox img{
+        width:5%;
+    }
+    
+}
+
+/* for removing bullets */
+#topbox li{
+    list-style: none;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+/* for removing underline */
+a{
+    text-decoration: none;
+}
+/* on hovering */
+#topbox li a:visited{
+    color: darkgoldenrod;
+}
+#topbox li a:hover{
+    border: 2px solid blue;
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+}
+/* for active page......see this  */
+/* #topbox li a:active{
+    background-color: black;
+    color: white;
+} */
+
+body{
+    background:url(bgimage.png);
+    /* if not want to repeat then use ....background:url(bgimage.png) no-repeat center fixed;
+    background-size: cover; */
+}
+
+@media  screen and (max-width:800px) {
+    #loginu{
+        width:40%;
+        margin-left: 28%;
+        margin-top: 15%;
+    }
+    .loginbox{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@media  screen and (min-width:800px) {
+    #loginu{
+        width:25%;
+        margin-left: 35%;
+        margin-top: 10%;
+    }
+    .loginbox{
+        margin-left:15% ;
+        margin-right:15% ;
+    }
+}
+/* for image to move from originial pos */
+#loginu{
+    border-radius: 50%;
+    position: relative;
+}
+.loginbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:rgb(9, 12, 10);
+    color:rgb(248, 208, 32);
+    margin-top: -5%;
+    opacity: 0.8;
+        /*  for border box....box-shadow: offset-x offset-y blur-radius spread-radius color; */
+    /* box-shadow:8px 8px 8px 8px rgb(37, 33, 27); */
+    box-shadow: -8px -8px 15px 8px rgb(49, 47, 47);
+}
+p{
+    margin-top: 7%;
+}
+h1{
+    text-align: center;
+    margin-top: 5%;
+}
+h1,form{
+    margin-left:5% ;
+}
+#loginboxid{
+    margin-top: 6%;
+    margin-left: 10%;
+}
+.lower{
+    margin-top: 5%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.loginbox input[type="submit"]
+{
+    height:40px; 
+    background:red;
+    color:rgb(86, 5, 236);
+    font-size: 30px;
+}
+.loginbox a{
+    margin:10px;
+    padding:10px;
+
+}
+.loginbox a:hover
+{
+    color: rgb(228, 17, 182);
+}
+/* for creating hover effect on the button */
+#loginboxid:hover{
+    color: antiquewhite;
+         border-radius: 20px;
+         cursor: pointer;
+         background-color: grey;
+}
